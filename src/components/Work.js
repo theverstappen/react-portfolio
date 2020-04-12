@@ -6,7 +6,7 @@ class Work extends Component {
     };
 
     componentDidMount() {
-        const url = `http://ec2-3-121-196-147.eu-central-1.compute.amazonaws.com:8000/api/v1/projects/`;
+        const url = `https://backend.beratakgul.com/api/v1/projects/`;
         axios.get(url, {withCredentials: true})
           .then(res => {
               console.log(res);

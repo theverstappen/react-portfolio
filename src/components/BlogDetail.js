@@ -10,7 +10,7 @@ class BlogDetail extends Component {
     }
     componentDidMount() {
         const id = this.props.match.params.id
-        const url = `http://ec2-3-121-196-147.eu-central-1.compute.amazonaws.com:8000/api/v1/posts/`+id;
+        const url = `https://backend.beratakgul.com/api/v1/posts/`+id;
         axios.get(url, {withCredentials: true})
           .then(res => {
             this.setState({post: res.data})
